@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_saleorder_document_custom" inherit_id="sale.report_saleorder_document">
+        <xpath expr="//div[@class='page']/div[hasclass('row')][1]" position="after">
+            <div class="row mt-4">
+                <div class="col-auto mw-100 mb-2">
+                    <strong>Nego:</strong>
+                    <p class="m-0" t-field="doc.nego_id"/>
+                </div>
+                <div class="col-auto mw-100 mb-2">
+                    <strong>Driver:</strong>
+                    <p class="m-0" t-field="doc.driver_id"/>
+                </div>
+            </div>
+        </xpath>
+    </template>
+</odoo>
